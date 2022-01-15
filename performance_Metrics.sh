@@ -271,8 +271,7 @@ echo "User,Job_name,Partition,Job_id,Group,College,Department,Account,Node_Reque
 
         #######################################################
 
-        mail -a "performance_Metrics_${currentDate}.csv" -a "highWastedCpuHrs_${currentDate}.csv" -a "lowCpuUtilization_${currentDate}.csv" -a "lowMemoryUtilization_${currentDate}.csv" -s "Performance Metrics ${currentDate}" sthirumo@uncc.edu,cmaher9@uncc.edu < starlight_cluster_${currentDate}.txt
-
+        
         rm lowCpuUtilization_${currentDate}.csv
         rm lowMemoryUtilization_${currentDate}.csv
         rm highCpuWaitTime_${currentDate}.csv
