@@ -75,10 +75,10 @@ sort -k1 -n -r -t, mean_CPU.csv > mean_CPU_Final.csv
 sed -i 1i"CPU_Requested,JobCount,combined" mean_CPU_Final.csv
 
 #echo "This Data is for dates from Monday to Sunday in calendar week $calendarWeek" >> mean.csv
-mail -a ${calendarWeek}.png -a /users/sthirumo/scripts/results/${calendarWeek}/data_${calendarWeek}.zip -s "Average Core Wall Clock Hours - ${calendarWeek}" sthirumo@uncc.edu,cmaher9@uncc.edu < "mean_Final.csv"
+mail -a ${calendarWeek}.png -a /users/sthirumo/scripts/results/${calendarWeek}/data_${calendarWeek}.zip -s "Average Core Wall Clock Hours - ${calendarWeek}" aaa@gmail.com < "mean_Final.csv"
 
 #echo "This Data is for dates from Monday to Sunday in calendar week $calendarWeek" >> mean_CPU.csv
-mail -a CPU_${calendarWeek}.png -a /users/sthirumo/scripts/results/${calendarWeek}/data_${calendarWeek}.zip -s "Average CPU Requested [Nodes*Cores per Node] - ${calendarWeek}" sthirumo@uncc.edu,cmaher9@uncc.edu < "mean_CPU_Final.csv"
+mail -a CPU_${calendarWeek}.png -a /users/sthirumo/scripts/results/${calendarWeek}/data_${calendarWeek}.zip -s "Average CPU Requested [Nodes*Cores per Node] - ${calendarWeek}" aaa@gmail.com < "mean_CPU_Final.csv"
 
 
 rm mean.csv,mean_actual.csv,mean_Final.csv,mean_CPU_Final.csv
