@@ -55,10 +55,10 @@ zip -r data_CW${calendarWeek}.zip data/
 cd -
 
 #echo "This Data is for dates from Monday to Sunday in calendar week $calendarWeek" >> mean.csv
-#mail -a CW${calendarWeek}.png -a /users/sthirumo/scripts/results/CW${calendarWeek}/data_CW${calendarWeek}.zip -s "Average Core Wall Clock Hours - CW${calendarWeek}" sthirumo@uncc.edu,cmaher9@uncc.edu < "mean.csv"
+#mail -a CW${calendarWeek}.png -a /users/sthirumo/scripts/results/CW${calendarWeek}/data_CW${calendarWeek}.zip -s "Average Core Wall Clock Hours - CW${calendarWeek}" aaa@gmail.com < "mean.csv"
 
 #echo "This Data is for dates from Monday to Sunday in calendar week $calendarWeek" >> mean_CPU.csv
-#mail -a CPU_CW${calendarWeek}.png -a /users/sthirumo/scripts/results/CW${calendarWeek}/data_CW${calendarWeek}.zip -s "Average CPU Requested [Nodes*Cores per Node] - CW${calendarWeek}" sthirumo@uncc.edu,cmaher9@uncc.edu < "mean_CPU.csv"
+#mail -a CPU_CW${calendarWeek}.png -a /users/sthirumo/scripts/results/CW${calendarWeek}/data_CW${calendarWeek}.zip -s "Average CPU Requested [Nodes*Cores per Node] - CW${calendarWeek}" aaa@gmail.com < "mean_CPU.csv"
 
 rm mean.csv,mean_actual.csv
 rm "mean_CPU.csv",mean_CPU_actual.csv
