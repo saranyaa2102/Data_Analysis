@@ -211,11 +211,11 @@ done
         mv "/users/sthirumo/scripts/result_${i}_user.csv" "/users/sthirumo/scripts/result_${currentDate}.csv"
 
         echo "Reached send mail step"
-       mail -a "TopUsers_${i}.png" -s "Top Utilization- Wall Clock Hours-Users-${currentDate}" sthirumo@uncc.edu,cmaher9@uncc.edu < /dev/null
+       mail -a "TopUsers_${i}.png" -s "Top Utilization- Wall Clock Hours-Users-${currentDate}" aaa@gmail.com < /dev/null
         sleep 2
-        mail -a "TopCollege_${i}.png" -s "Top Utilization- Wall Clock Hours-College-${currentDate}" sthirumo@uncc.edu,cmaher9@uncc.edu < /dev/null
+        mail -a "TopCollege_${i}.png" -s "Top Utilization- Wall Clock Hours-College-${currentDate}" aaa@gmail.com < /dev/null
         sleep 2
-        mail -a "TopDepartment_${i}.png" -s "Top Utilization- Wall Clock Hours-Department-${currentDate}" sthirumo@uncc.edu,cmaher9@uncc.edu < /dev/null
+        mail -a "TopDepartment_${i}.png" -s "Top Utilization- Wall Clock Hours-Department-${currentDate}" aaa@gmail.com < /dev/null
 
         mv /users/sthirumo/scripts/"result_${i}_user.txt" /users/sthirumo/scripts/results/CW${calendarWeek}/"result_${currentDate}.txt"
 
