@@ -64,7 +64,7 @@ do
         mv "/users/sthirumo/scripts/result_${i}_user.csv" "/users/sthirumo/scripts/result_${currentDate}.csv"
         #sh finalReport.sh > Finalreport.csv
 
-        mail -a "performance_Metrics_${currentDate}.csv" -a "highWastedCpuHrs_${currentDate}.csv" -a "lowCpuUtilization_${currentDate}.csv" -a "lowMemoryUtilization_${currentDate}.csv" -a "/users/sthirumo/scripts/"performance_Metrics_${currentDate}.csv"" -s "Performance Metrics ${currentDate} " sthirumo@uncc.edu < starlight_cluster_${currentDate}.txt
+        mail -a "performance_Metrics_${currentDate}.csv" -a "highWastedCpuHrs_${currentDate}.csv" -a "lowCpuUtilization_${currentDate}.csv" -a "lowMemoryUtilization_${currentDate}.csv" -a "/users/sthirumo/scripts/"performance_Metrics_${currentDate}.csv"" -s "Performance Metrics ${currentDate} " aaa@gmail.com < starlight_cluster_${currentDate}.txt
 
         mail -a "/users/sthirumo/scripts/TopUsers_${i}.png" -s "Top Utilization- Wall Clock Hours-Users-${currentDate}" aaa@gmail.com < "user_clock_hrs_data_${i}.csv" < /dev/null
         sleep 2
