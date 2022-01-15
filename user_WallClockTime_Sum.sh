@@ -66,11 +66,11 @@ do
 
         mail -a "performance_Metrics_${currentDate}.csv" -a "highWastedCpuHrs_${currentDate}.csv" -a "lowCpuUtilization_${currentDate}.csv" -a "lowMemoryUtilization_${currentDate}.csv" -a "/users/sthirumo/scripts/"performance_Metrics_${currentDate}.csv"" -s "Performance Metrics ${currentDate} " sthirumo@uncc.edu < starlight_cluster_${currentDate}.txt
 
-        mail -a "/users/sthirumo/scripts/TopUsers_${i}.png" -s "Top Utilization- Wall Clock Hours-Users-${currentDate}" sthirumo@uncc.edu < "user_clock_hrs_data_${i}.csv" < /dev/null
+        mail -a "/users/sthirumo/scripts/TopUsers_${i}.png" -s "Top Utilization- Wall Clock Hours-Users-${currentDate}" aaa@gmail.com < "user_clock_hrs_data_${i}.csv" < /dev/null
         sleep 2
-        mail -a "/users/sthirumo/scripts/TopCollege_${i}.png" -s "Top Utilization- Wall Clock Hours-College-${currentDate}" sthirumo@uncc.edu < "College_clock_hrs_data_${i}.csv" < /dev/null
+        mail -a "/users/sthirumo/scripts/TopCollege_${i}.png" -s "Top Utilization- Wall Clock Hours-College-${currentDate}" aaa@gmail.com < "College_clock_hrs_data_${i}.csv" < /dev/null
         sleep 2
-        mail -a "/users/sthirumo/scripts/TopDepartment_${i}.png" -s "Top Utilization- Wall Clock Hours-Department-${currentDate}" sthirumo@uncc.edu < "department_clock_hrs_data_${i}.csv" < /dev/null
+        mail -a "/users/sthirumo/scripts/TopDepartment_${i}.png" -s "Top Utilization- Wall Clock Hours-Department-${currentDate}" aaa@gmail.com < "department_clock_hrs_data_${i}.csv" < /dev/null
 
         mv /users/sthirumo/scripts/"result_${i}_user.txt" /users/sthirumo/scripts/results/CW${calendarWeek}/"result_${currentDate}.txt"
         rm "user_clock_hrs_data_${i}.csv" "College_clock_hrs_data_${i}.csv" "department_clock_hrs_data_${i}.csv"
